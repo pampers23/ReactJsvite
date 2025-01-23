@@ -1,21 +1,19 @@
-import autumnImage from '../assets/autumn.png';
+import blue from "../assets/back-blue.jpg";
 
 const Home = () => {
   return (
-    <section id="home" className="flex items-center justify-center p-16 space-x-12">
-      <div className="text-left max-w-lg">
-        <span className="text-orange-500">Our books</span>
-        <h3 className="text-4xl font-semibold text-blue-900 mb-3">Business</h3>
-        <p className="text-gray-700 mb-6">
-          Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat.
-          Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.
-        </p>
-        <a href="#" className="bg-orange-500 text-white px-10 py-3 rounded mt-4 inline-block">
-          Order now
-        </a>
-      </div>
-      <div className="w-1000 h-1000 mt-10">
-        <img src={autumnImage} alt="Autumn" className="w-full h-full object-cover rounded-lg" />
+    <section
+      id="home"
+      className="bg-cover bg-center h-screen flex flex-col justify-center items-center text-center text-white"
+      style={{ backgroundImage: `url(${blue})` }}
+    >
+      <h2 className="text-4xl font-bold mb-4">Bright Minds: Kids Learning Hub</h2>
+      <p className="w-1/2 mb-8">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus non neque culpa unde a porro corrupti assumenda veritatis quasi quae molestiae quisquam eaque minus, ex, laudantium quos qui voluptatibus?
+      </p>
+      <div className="flex space-x-4">
+        <a href="#" className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300">Learn More</a>
+        <a href="#" className="bg-sky-700 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-sky-500 transition duration-300">Try it out</a>
       </div>
     </section>
   );

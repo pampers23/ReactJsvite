@@ -1,33 +1,33 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-10">
-      <div className="max-w-screen-xl mx-auto px-4 flex flex-wrap justify-between">
-        <div className="footer-section w-full sm:w-1/3 mb-6 sm:mb-0">
-          <h3 className="text-lg font-semibold mb-4">About Us</h3>
-          <p className="text-sm text-left mx-auto mr-10">
-            We provide the best books for you. Learn more about our services and explore our collection.
-            </p>
+    <footer className="bg-blue-900 text-white py-10">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold mb-4">Bright Minds</h3>
+          <p className="text-gray-300">An interactive learning platform designed to make education fun and engaging for kids.</p>
         </div>
-        <div className="footer-section w-full sm:w-1/3 mb-6 sm:mb-0">
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li><a href="#home" className="text-sm hover:text-orange-500">Home</a></li>
-            <li><a href="#about" className="text-sm hover:text-orange-500">About</a></li>
-            <li><a href="#books" className="text-sm hover:text-orange-500">Books</a></li>
-            <li><a href="#categories" className="text-sm hover:text-orange-500">Categories</a></li>
-            <li><a href="#contacts" className="text-sm hover:text-orange-500">Contacts</a></li>
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold mb-4">Quick Links</h3>
+          <ul>
+            <li><a href="#home" className="text-gray-300 hover:text-white">Home</a></li>
+            <li><a href="#about" className="text-gray-300 hover:text-white">About</a></li>
+            <li><a href="#activities" className="text-gray-300 hover:text-white">Activities</a></li>
+            <li><a href="#contacts" className="text-gray-300 hover:text-white">Contact</a></li>
           </ul>
         </div>
-        <div className="footer-section w-full sm:w-1/3">
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm">Email: support@bookstore.com</p>
-          <p className="text-sm">Phone: +1 234 567 890</p>
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
+          <div className="flex space-x-4">
+            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-facebook-f"></i></a>
+            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-twitter"></i></a>
+            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-instagram"></i></a>
+            <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
       </div>
-      <div className="footer-bottom mt-6 text-sm text-center">
-        <p>&copy; 2025 Bookstore. All rights reserved.</p>
-    </div>
-
+      <div className="text-center mt-10 pt-6 border-t border-gray-800">
+        <p className="text-gray-300">&copy; 2023 Bright Minds. All rights reserved.</p>
+      </div>
     </footer>
   );
 };
